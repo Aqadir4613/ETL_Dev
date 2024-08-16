@@ -1,0 +1,14 @@
+name: Print OK on Push to Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print-ok:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print OK
+      run: echo "ok"
